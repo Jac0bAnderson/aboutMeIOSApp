@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Home" id="BYZ-38-t0r" customClass="ViewController" customModule="aboutMeIOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMw-up-ifT">
+                                <rect key="frame" x="336" y="78" width="56" height="30"/>
+                                <state key="normal" title="Games"/>
+                                <connections>
+                                    <action selector="gamesButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qbL-mn-7N3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dly-XP-1hW">
+                                <rect key="frame" x="182" y="28" width="46" height="30"/>
+                                <state key="normal" title="Books"/>
+                                <connections>
+                                    <action selector="booksButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pzM-Bd-8fV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iv1-5o-Ozw">
+                                <rect key="frame" x="341" y="28" width="46" height="30"/>
+                                <state key="normal" title="Music"/>
+                                <connections>
+                                    <action selector="musicButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wfK-ZC-BtS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ugp-i3-iiz">
+                                <rect key="frame" x="164" y="78" width="83" height="30"/>
+                                <state key="normal" title="Swimming"/>
+                                <connections>
+                                    <action selector="swimmingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WFx-xb-iPX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="jHw-YK-mxj" kind="presentation" identifier="toSwimming" id="4iE-NO-rfz"/>
+                        <segue destination="DDN-qd-BmT" kind="presentation" identifier="toGames" id="MZq-oH-WWR"/>
+                        <segue destination="PIX-SR-MlQ" kind="presentation" identifier="toBooks" id="ZpV-Kw-F0X"/>
+                        <segue destination="MjE-sU-xpR" kind="presentation" identifier="toMusic" id="GPi-Dh-lbM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="17" y="-958"/>
+        </scene>
+        <!--Games-->
+        <scene sceneID="aYp-Tg-cUb">
+            <objects>
+                <viewController title="Games" id="DDN-qd-BmT" customClass="GamesController" customModule="aboutMeIOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y91-ec-tMl"/>
+                        <viewControllerLayoutGuide type="bottom" id="LGO-69-3EE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gaw-1H-5fa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJk-50-b49">
+                                <rect key="frame" x="283" y="466" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="gamesHome:" destination="DDN-qd-BmT" eventType="touchUpInside" id="Ez2-fi-cfu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="In my free time I like to play games.  I like to play games on steam and " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhP-Dk-MFz">
+                                <rect key="frame" x="20" y="44" width="631" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="on the ps4. Some of my favorite games are Outlast, Psychonauts, Tomb" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGn-r3-awA">
+                                <rect key="frame" x="20" y="86" width="548" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="raider, and Jet Set Radio Future." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vYi-Cd-DQx">
+                                <rect key="frame" x="20" y="123" width="253" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Outlast.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4x0-HN-xRl">
+                                <rect key="frame" x="20" y="168" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tombraidr.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hIo-pG-XC5">
+                                <rect key="frame" x="328" y="328" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Psychonauts_Logo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="C6k-Nb-jbF">
+                                <rect key="frame" x="20" y="328" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="JetSetRadioFuturebox.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Aed-9k-hcs">
+                                <rect key="frame" x="328" y="168" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.71434713622648061" green="0.67895287334217747" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="gamesToHome" id="Qva-lt-Hp0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Smh-HJ-7w9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1081" y="113"/>
+        </scene>
+        <!--Books-->
+        <scene sceneID="XHR-Z6-rxu">
+            <objects>
+                <viewController title="Books" id="PIX-SR-MlQ" customClass="BooksController" customModule="aboutMeIOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ae4-4R-7UY"/>
+                        <viewControllerLayoutGuide type="bottom" id="gxe-n0-syL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dkk-vh-HqJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAh-iC-SYr">
+                                <rect key="frame" x="283" y="525" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="booksHome:" destination="PIX-SR-MlQ" eventType="touchUpInside" id="xpf-HR-eDH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I usually read articles online from news stories to new technology.  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcy-Sm-blX">
+                                <rect key="frame" x="20" y="28" width="1048" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I also like to read books; my favorite series is the Percy Jackson series." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYf-aH-23C">
+                                <rect key="frame" x="20" y="64" width="550" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="b00ks.png" translatesAutoresizingMaskIntoConstraints="NO" id="s4i-xj-yWy">
+                                <rect key="frame" x="340" y="200" width="240" height="200"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8812147327745804" green="0.8812147327745804" blue="0.8812147327745804" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="booksToHome" id="kQ9-UB-AVU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gKo-jT-Sux" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-388" y="810"/>
+        </scene>
+        <!--Swimming-->
+        <scene sceneID="DtN-Zp-F7c">
+            <objects>
+                <viewController title="Swimming" id="jHw-YK-mxj" customClass="SwimmingController" customModule="aboutMeIOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dZa-Ac-315"/>
+                        <viewControllerLayoutGuide type="bottom" id="2cM-Ig-wTs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oRK-zB-9Je">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDF-mL-0eH">
+                                <rect key="frame" x="283" y="527" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="swimBack:" destination="jHw-YK-mxj" eventType="touchUpInside" id="Cs1-VF-MfK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I like to swim competitively in the summer, and during the school year. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CdK-AA-D92">
+                                <rect key="frame" x="20" y="28" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="In the summer I swim for the Life Center team, and in the school year " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IwD-SU-Xvv">
+                                <rect key="frame" x="20" y="78" width="722" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I swim for the Alta team.  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NW7-tS-Wjv">
+                                <rect key="frame" x="20" y="124" width="193" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Omega-swimming-show.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2Z0-K6-6GH">
+                                <rect key="frame" x="252" y="196" width="259" height="198"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.81526426794806994" green="1" blue="0.88528508796112193" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="swimToHome" id="3tP-Lc-63q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="27S-Fq-4MH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1248" y="90"/>
+        </scene>
+        <!--Music-->
+        <scene sceneID="WoA-fg-uwe">
+            <objects>
+                <viewController title="Music" id="MjE-sU-xpR" customClass="MusicController" customModule="aboutMeIOSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LJ9-nt-5aK"/>
+                        <viewControllerLayoutGuide type="bottom" id="TBO-2Q-rc8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bse-Lz-9e2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gwn-vI-nma">
+                                <rect key="frame" x="283" y="523" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="musicHome:" destination="MjE-sU-xpR" eventType="touchUpInside" id="WHK-Ps-CwO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="In my free time, and when I’m doing work I like to listen to music. My " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yET-9r-d3h">
+                                <rect key="frame" x="20" y="28" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="favorite music artists are Nine Inch nails, My Chemical Romance, and Cage " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eiQ-ES-Nfy">
+                                <rect key="frame" x="20" y="69" width="675" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="the Elephant." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQd-Cy-5d1">
+                                <rect key="frame" x="20" y="113" width="101" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="My_Chemical_Romance_Desktop_by_LynchMob10_09.png" translatesAutoresizingMaskIntoConstraints="NO" id="pbx-Hn-rVh">
+                                <rect key="frame" x="340" y="172" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="220px-Nine_Inch_Nails_logo.svg.png" translatesAutoresizingMaskIntoConstraints="NO" id="OF8-oL-icI">
+                                <rect key="frame" x="180" y="335" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="61EUx+sDi7L.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="JNt-Wk-rSl">
+                                <rect key="frame" x="20" y="172" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="musicToHome" id="q8q-Ag-Obv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cPp-us-6y8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="390" y="773"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="220px-Nine_Inch_Nails_logo.svg.png" width="220" height="97"/>
+        <image name="61EUx+sDi7L.jpg" width="500" height="500"/>
+        <image name="JetSetRadioFuturebox.jpg" width="250" height="355"/>
+        <image name="My_Chemical_Romance_Desktop_by_LynchMob10_09.png" width="1440" height="900"/>
+        <image name="Omega-swimming-show.jpg" width="660" height="440"/>
+        <image name="Outlast.jpg" width="1920" height="1080"/>
+        <image name="Psychonauts_Logo.jpg" width="1600" height="900"/>
+        <image name="b00ks.png" width="454" height="478"/>
+        <image name="tombraidr.jpg" width="1280" height="720"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="q8q-Ag-Obv"/>
+    </inferredMetricsTieBreakers>
+</document>
